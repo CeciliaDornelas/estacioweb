@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <nav>
+        <div class="fundo"> 
+            <div class="logo">
+                <h1>Logomarca</h1>
+            </div> 
+        <div class="clear"></div>
+        </div>
+    </nav>
+    <section>
+        <div class="conteiner">
+            <div class="bloco">
+            <div class="name"> 
+                <h1><strong>Cadastro:</strong></h1>
+            </div>
+            <form action="processo.php" method="POST">
+                <div class="w50">
+                    <div class="form-group">
+                        <label><strong>Nome:</strong></label>
+                        <br>
+                        <input type="text" name="nome" required autofocus maxlength="50"/>
+                    </div>
+                </div>
+                <div class="w50">
+                    <div class="form-group">
+                        <label><strong>Email:</strong></label>
+                        <br>
+                        <input type="email" name="email" required autofocus maxlength="50"/>
+                    </div>
+                </div>
+                <div class="w50">
+                    <div class="form-group">
+                        <label><strong>Telefone:</strong></label>
+                        <br>
+                        <input type="text" name="tel" required maxlength="12" />
+                    </div>
+                </div>
+                <div class="w50">
+                    <div class="form-group">
+                        <label><strong>Nascimento:</strong></label>
+                        <br>
+                        <input type="date" name="dat" required/>
+                    </div>
+                </div>
+                <div>
+                    <br>
+                    <input type="submit" value="Enviar" id="submit"/>
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="fundo2">
+            <p>Direitos reservados.....</p>
+        </div>
+    </footer>
+</body>
+</html>

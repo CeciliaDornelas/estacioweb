@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: tomato;
+}
+.erro{
+    margin-top: 20px ;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: palegoldenrod;
+    border-top: 4px brown solid;
+    border-bottom: 4px brown solid;
+}
+.success{
+    margin-top: 8% ;
+    padding-top:15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: palegoldenrod;
+    border-top: 4px brown solid;
+    border-bottom: 4px brown solid;
+}
+@media screen and (max-width:700px){
+    .erro{
+        margin-top: 90px;
+        padding-top: 10px;
+    }
+    .erro>img{
+        width: 400px;
+
+    }
+    .success{
+        margin-top: 90px;
+    }
+    .success>img{
+        width: 400px;
+
+    }
+}
