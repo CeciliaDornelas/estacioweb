@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idade</title>
+</head>
+<body>
+    <script>
+        var age = prompt("informe a sua idade:");
+        var sexo = prompt("informe o seu sexo: (f/m)");
+
+        if(age>=18 && sexo=='f'){
+            window.alert('Pode entrar no bar sem taxa');
+        }
+        if(age<18 && sexo=='f'){
+            window.alert('Não pode entrar no bar');
+        }
+        if(age>=18 && sexo=='m'){
+            window.alert('Pode entrar no bar com taxa');
+        }
+        else{
+            window.alert('Não pode entrar no bar');
+        }
+
+    </script>
+</body>
+</html>
