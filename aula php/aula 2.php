@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-        $_nome = "Cecilia Dornelas";
+        $nome = "Cecilia Dornelas";
         print $nome;   
     
     ?>
