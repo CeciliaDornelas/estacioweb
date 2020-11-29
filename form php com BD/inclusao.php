@@ -16,6 +16,6 @@
 
     
     if (isset($_POST['clear'])) {
-        header('location: ../cadastro.html');
+        header('location: cadastro.html');
     }
 ?>
