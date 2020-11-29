@@ -6,7 +6,6 @@
     $email = $_POST['email'];
     $tel = $_POST['tel'];
 
-    echo $nome, $email, $tel;
 
     $sql = "INSERT INTO users (`codigo`, `nome`, `email`,`tel`) VALUES (null, '$nome','$email','$tel')";
 

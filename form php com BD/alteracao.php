@@ -24,7 +24,7 @@
 </head>
 <body>
     <form action="update.php" method="POST" class="alteracao">
-        <input type="text" name="cod" value="<?php echo $cod;?>">
+        <input type="hidden" name="cod" value="<?php echo $cod;?>">
         <input type="text" name="nome" value="<?php echo $nome;?>">
         <input type="email" name="email" value="<?php echo $email;?>">
         <input type="tel" name="tel" value="<?php echo $tel;?>">
