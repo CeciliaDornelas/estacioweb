@@ -44,7 +44,7 @@
         echo "<td>$email</td>";
         echo "<td>$tel</td>";
 ?>
-    <td><a href='alteracao.php?id=<?php echo $cod; ?>' class='alt btn btn-primary'><icon class="fas fa-paint-brush"></icon></a></td>
+    <td><a href='alteracao.php?id=<?php echo $cod; ?>' class='alt btn btn-primary'><icon class="fas fa-edit"></icon></a></td>
     <td><a href='exclusao.php?id=<?php echo $cod; ?>' class='alt btn btn-danger'><icon class="fas fa-trash-alt"></icon></a></td></button>
     </tr>
 <?php endwhile; ?>
