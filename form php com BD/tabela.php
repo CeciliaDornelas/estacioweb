@@ -16,6 +16,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Tabela de Users</title>
 
 </head>
@@ -25,7 +26,6 @@
     <table class="table" style=" position: absolute; top: 20%; font-size: 20px; color: rgb(49, 48, 48); border-radius: 5px; text-align: center;" >
         
         <tr class="titulos alert alert-secondary">
-            <th scope="col">Código</th>
             <th scope="col">Nome do Usuário</th>
             <th scope="col">Email</th>
             <th scope="col">Telefone</th>
@@ -40,17 +40,17 @@
         $tel = $tbl ['tel'];
 
         echo "<tr>";
-        echo "<td>$cod</td>";
         echo "<td>$nome</td>";
         echo "<td>$email</td>";
         echo "<td>$tel</td>";
 ?>
-    <td> <icon><a href='alteracao.php?id=<?php echo $cod; ?>' class='alt btn btn-primary'>editar</a></td></icon>
-    <td> <icon><a href='exclusao.php?id=<?php echo $cod; ?>' class='alt btn btn-danger'>remover</a></td></button>
+    <td><a href='alteracao.php?id=<?php echo $cod; ?>' class='alt btn btn-primary'><icon class="fas fa-paint-brush"></icon></a></td>
+    <td><a href='exclusao.php?id=<?php echo $cod; ?>' class='alt btn btn-danger'><icon class="fas fa-trash-alt"></icon></a></td></button>
     </tr>
 <?php endwhile; ?>
     <div class="div-cad">
         <button type="button" class="btn btn-primary cad-usuario"><a class="cad-link" href="cadastro.html" >Cadastrar Novo Usuário</a></button>
     </div>
+
 </body>
 </html>
