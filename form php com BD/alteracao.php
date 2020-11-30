@@ -19,16 +19,30 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilos/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/cadastro.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>tabela de users</title>
 </head>
 <body>
-    <form action="update.php" method="POST" class="alteracao">
-        <input type="hidden" name="cod" value="<?php echo $cod;?>">
-        <input type="text" name="nome" value="<?php echo $nome;?>">
-        <input type="email" name="email" value="<?php echo $email;?>">
-        <input type="tel" name="tel" value="<?php echo $tel;?>">
-        <input type="submit" value="salvar">
-    </form>
+    <div class="alinhar">
+        <form action="update.php" method="POST" class="alteracao">
+            <h3>Editar:</h3>
+            <div class="ajustes">
+                <input type="hidden" name="cod" value="<?php echo $cod;?>">
+                <p>nome:<input type="text" class="inputs" name="nome" value="<?php echo $nome;?>"></p>
+            </div>
+            <div class="ajustes">
+                <p>email:<input type="email" class="inputs" name="email" value="<?php echo $email;?>"></p>
+            </div>
+            <div class="ajustes">
+                <p>telefone:<input type="tel" class="inputs" name="tel" value="<?php echo $tel;?>"></p>
+            </div>
+                <input type="submit" class="btn btn-primary" value="salvar">
+            
+        </form>
+    </div>
 </body>
 </html>

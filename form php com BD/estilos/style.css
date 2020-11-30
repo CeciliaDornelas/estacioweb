@@ -3,37 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
-body>table{
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%,50%);
-    font-size: 20px;
-    width: 60%;
-    height: 30%;
-    color: rgb(49, 48, 48);
-    border-radius: 5px;
-    text-align: center;
+button{border: 0px;}
+a{text-decoration: none;}
+a:hover{
+    text-decoration:none;
+    color: white;
 }
-.titulos{
-    font-weight: bold;
+h4{
+    padding-left: 30px;
+    padding-top: 50px;
+     font-family: arial; 
+     font-weight: bolder;
+    }
+.cad-usuario{
+     padding-left: 20px;
+     padding-bottom: 6px;
+     padding-right: 20px;
+     padding-top: 6px;
+     margin-top: 6px;
 }
-.alt{
-    color:white;
-    text-decoration: none;
-    border: orangered solid;
-    background-color: orangered;
-    border-radius: 15px;
+.cad-link{
+        font-weight: bolder;
+        color: white;
+        border: none;
 }
-.alteracao{
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%,50%);
-    font-size: 20px;
-    color: rgb(49, 48, 48);
-    border-radius: 5px;
-    text-align: center;
-}
-
-
+.div-cad{padding-left: 80%;}
